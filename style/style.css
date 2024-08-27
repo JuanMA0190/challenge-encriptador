@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+	--principal--font:"Inter", sans-serif;
+	
+	--size--font--text:2rem;
+	--size--font--message1:1.5rem;
+	--size--font--message2--and--button:1rem;
+
+	--background--color--body:#868E96;
+	--background--color--message:#ADB5BD;
+
+	--background--color--button1:#072B61;
+	--background--color--button1--hover:#356EA9;
+
+	--background--color--button2:#E9ECF8;
+	--background--color--button2--hover:#AAB2D5;
+
+	--color--font--text:#0A3871;
+	--color--font--message:#343A40;
+	--color--font--button1:#E9ECF8;
+	--color--font--button2:#072B61;
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	box-sizing: border-box;
+	background-color: var(--background--color--body);
+}
+
+.header{
+	display: flex;
+	justify-content: center;
+	padding: 1% 0 0 1%;
+}
+
+.principal{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 10px;
+	padding:1% 7%;
+}
+
+.principal__text{
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+}
+
+.principal__text__prompt{
+	color: var(--color--font--text);
+	font-size: var(--size--font--text);
+	resize: none;
+	font-family: var(--principal--font);
+	font-weight: 600;
+	height: 600px;
+	width: 1600px;
+	background-color: var(--background--color--body);
+	border: none;
+}
+
+.principal__text__message{
+	background-color: var(--background--color--message);
+	border-radius: 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2% 5%;
+	gap: 30px;
+	font-family: var(--principal--font);
+	color:var(--color--font--message);
+}
+
+.principal__text__message__title{
+	font-weight: 800;
+	text-align: center;
+	font-size: var(--size--font--message1);
+}
+
+.principal__text__message__paragraph{
+	font-weight: 500;
+	text-align: center;
+	font-size: var(--size--font--message2--and--button);
+}
+
+button{
+	font-family: var(--principal--font);
+	font-size: var(--size--font--message2--and--button);
+	font-weight: 600;
+	border-radius: 24px;
+	text-align: center;
+	padding:20px;
+}
+
+.principal__text__message__copy_button{
+	background-color: var(--background--color--button1);
+	width: 80%;
+	color: var(--color--font--button1);
+}
+
+/*icono*/
+.mdi--alert-circle {
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M13 13h-2V7h2m0 10h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+.principal__warning{
+	color: var(--color--font--message);
+	font-size: var(--size--font--message2--and--button);
+	font-weight: 400;
+}
+
+.principal__buttons{
+	padding: 0.5% 0 0 0;
+	display: flex;
+	gap:20px;
+}
+
+.principal__buttons__button1{
+	background-color: var(--background--color--button1);
+	color: var(--color--font--button1);
+	width: 22%;
+}
+
+.principal__buttons__button2{
+	background-color: var(--background--color--button2);
+	color: var(--color--font--button2);
+	width: 22%;
+}
+
+
+
+
+
+
+.footer{
+	font-family: var(--principal--font);
+	font-weight: 400;
+	background-color: var(--background--color--button1);
+	color: var(--color--font--button1);
+	border-radius: 32px;
+	text-align: center;
+	padding: 0.5% 0 0.1% 0;
+}
+.footer__paragraph{
+	font-size: var(--size--font--message1);
+}
+a{
+	text-decoration: none;
+	color: var(--color--font--button1);
+	font-size: var(--size--font--message2--and--button);
+}
