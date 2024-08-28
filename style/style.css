@@ -63,7 +63,14 @@ body{
 	border: none;
 }
 
+.principal__text__prompt:focus {
+    outline: none;
+    border: 0.1px solid transparent; 
+}
+
 .principal__text__message{
+	height: 600px;
+	width:300px;
 	background-color: var(--background--color--message);
 	border-radius: 32px;
 	display: flex;
@@ -102,6 +109,11 @@ button{
 	color: var(--color--font--button1);
 }
 
+.principal__text__message__copy_button:hover{
+	background-color: var(--background--color--button1--hover);
+	cursor: pointer;
+}
+
 /*icono*/
 .mdi--alert-circle {
   display: inline-block;
@@ -134,12 +146,21 @@ button{
 	width: 22%;
 }
 
+.principal__buttons__button1:hover{
+	background-color: var(--background--color--button1--hover);
+	cursor: pointer;
+}
+
 .principal__buttons__button2{
 	background-color: var(--background--color--button2);
 	color: var(--color--font--button2);
 	width: 22%;
 }
 
+.principal__buttons__button2:hover{
+	background-color: var(--background--color--button2--hover);
+	cursor: pointer;
+}
 
 
 
@@ -161,4 +182,42 @@ a{
 	text-decoration: none;
 	color: var(--color--font--button1);
 	font-size: var(--size--font--message2--and--button);
+}
+
+/*Tablet*/
+@media (min-width: 744px) and (max-width: 991px) {
+	.principal__text{
+		flex-direction: column;
+		align-items: center;
+	}
+  .principal__text__message__image {
+    display: none;
+  }
+  .principal__text__prompt{
+  	width: 360px;
+  	height: 620px;
+  }
+  .principal__warning{
+  	display: flex;
+  	justify-content: center;
+  }
+}
+
+/*Telefono */
+@media (max-width: 743px) {
+	.principal__text{
+		flex-direction: column;
+		align-items: center;
+	}
+  .principal__text__message__image {
+    display: none; 
+  }
+  .principal__text__prompt{
+  	width: 330px;
+  	height: 610px;
+  }
+  .principal__warning{
+  	display: flex;
+  	justify-content: center;
+  }
 }

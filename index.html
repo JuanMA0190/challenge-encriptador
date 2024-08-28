@@ -14,25 +14,25 @@
 		<div class="principal__text">
 			<textarea class="principal__text__prompt" placeholder="Ingrese el texto aquí" required autofocus></textarea>
 			<div class="principal__text__message">
-				<img src="./assets/Muñeco.png" alt="Imagen Mueñeco">
+				<img src="./assets/Muñeco.png" alt="Imagen Mueñeco" class="principal__text__message__image">
 				<span class="principal__text__message__title">Ningún mensaje fue encontrado</span>
 				<p class="principal__text__message__paragraph">Ingresa el texto que deseas encriptar o desencriptar</p>
-				<button class="principal__text__message__copy_button" type="button" disabled>Copiar</button>
+				<button class="principal__text__message__copy_button" type="button" onclick="copyText();">Copiar</button>
 			</div>	
 		</div>
 		<p class="principal__warning"><span class="mdi--alert-circle"></span> Solo letras minúsculas y sin acentos</p>
 		<section class="principal__buttons">
-			<button class="principal__buttons__button1" type="button">Encriptar</button>
-			<button class="principal__buttons__button2" type="button">Desencriptar</button>
-			<button class="principal__buttons__button2" type="button">Limpiar</button>
+			<button class="principal__buttons__button1" type="button" onclick="encrypt();">Encriptar</button>
+			<button class="principal__buttons__button2" type="button" onclick="decrypt();">Desencriptar</button>
+			<button class="principal__buttons__button2" type="button" onclick="clean()">Limpiar</button>
 		</section>
 	</main>
 	<footer class="footer">
 		<p class="footer__paragraph">Desarrollado por Juan Manuel Acosta</p>
-		<a href="https://github.com/JuanMA0190">GitHub</a>
+		<a href="https://github.com/JuanMA0190">GitHub |</a>
 		<a href="https://linkedin.com/in/juan-acosta-n19">LinkedIn</a>
 		<p >Gracias a: Alura y Oracle <3</p>
 	</footer>
-	
+	<script src="./script/script.js" defer></script>
 </body>
 </html>
