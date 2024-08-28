@@ -7,9 +7,11 @@
 <p>Trata de un ecriptador y desencriptador fantástico.</p>
 
 <h2>Tecnólogias Utilizadas</h2>
-*HTML
-*CSS
-*JavaScript
+<ul>
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>JavaScript</li>
+</ul
 
-###Hecho por:
-###Juan Manuel Acosta
+<h3>Hecho por:</h3>
+<h3>Juan Manuel Acosta</h3>
