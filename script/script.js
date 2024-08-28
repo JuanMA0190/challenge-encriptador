@@ -1,7 +1,7 @@
 initialState();
 clean();
 const letter = ['a', 'e', 'i', 'o', 'u'];
-const letterEncrypt = ['ai', 'enter', 'ines', 'ober', 'ufat'];
+const letterEncrypt = ['ai', 'enter', 'imes', 'ober', 'ufat'];
 function initialState(){
 	document.querySelector('.principal__text__message__copy_button').style.display = "none";
 }
