@@ -1,12 +1,12 @@
-#Challenge Encriptador de Alura 
+<h1>Challenge Encriptador de Alura </h1>
 
-Este challenge fue muy desafiante y aprendi muchisimo!
+<p>Este challenge fue muy desafiante y aprendi muchisimo!</p>
 
-##De que trata?
+<h2>De que trata?</h2>
 
-Trata de un ecriptador y desencriptador fantástico.
+<p>Trata de un ecriptador y desencriptador fantástico.</p>
 
-##Tecnólogias Utilizadas:
+<h2>Tecnólogias Utilizadas</h2>
 *HTML
 *CSS
 *JavaScript
