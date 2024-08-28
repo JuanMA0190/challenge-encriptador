@@ -12,7 +12,7 @@
 	</header>
 	<main class="principal">
 		<div class="principal__text">
-			<textarea class="principal__text__prompt" placeholder="Ingrese el texto aquí" required autofocus></textarea>
+			<textarea class="principal__text__prompt" placeholder="Ingrese el texto aquí" required autofocus onkeyup="verificarYActualizarTexto();"></textarea>
 			<div class="principal__text__message">
 				<img src="./assets/Muñeco.png" alt="Imagen Mueñeco" class="principal__text__message__image">
 				<span class="principal__text__message__title">Ningún mensaje fue encontrado</span>
@@ -24,7 +24,7 @@
 		<section class="principal__buttons">
 			<button class="principal__buttons__button1" type="button" onclick="encrypt();">Encriptar</button>
 			<button class="principal__buttons__button2" type="button" onclick="decrypt();">Desencriptar</button>
-			<button class="principal__buttons__button2" type="button" onclick="clean()">Limpiar</button>
+			<button class="principal__buttons__button2" type="button" onclick="clean();">Limpiar</button>
 		</section>
 	</main>
 	<footer class="footer">

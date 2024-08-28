@@ -1,18 +1,22 @@
 initialState();
-clean();
+
 const letter = ['a', 'e', 'i', 'o', 'u'];
 const letterEncrypt = ['ai', 'enter', 'imes', 'ober', 'ufat'];
 function initialState(){
+    document.querySelector('.principal__text__prompt').value = "";
 	document.querySelector('.principal__text__message__copy_button').style.display = "none";
+    return;
 }
 
 function showCopyButton(){
 	document.querySelector('.principal__text__message__copy_button').style.display = "block";
+    return;
 }
 
 function hiddenElements(){
 	document.querySelector('.principal__text__message__image').style.display = "none";
 	document.querySelector('.principal__text__message__paragraph').style.display = "none";
+    return;
 }
 
 function encrypt(){
@@ -27,6 +31,7 @@ function encrypt(){
 		}
 	}
 	document.querySelector(".principal__text__message__title").innerHTML = word.join("");
+    return;
 }
 
 function decrypt(){
@@ -40,6 +45,7 @@ function decrypt(){
     }
 
     document.querySelector(".principal__text__message__title").innerHTML = word;
+    return;
 }
 
 function copyText(){
@@ -59,6 +65,8 @@ function copyText(){
     const button = document.querySelector(".principal__text__message__copy_button");
     button.innerHTML = "Texto Copiado!";
     button.setAttribute('disabled', 'true');
+
+    return;
 }
 
 function eliminarMayusculasYAcentos(text) {
@@ -67,25 +75,22 @@ function eliminarMayusculasYAcentos(text) {
     return textoSinAcentos;
 }
 
-function verificarYActualizarTexto(textarea) {
-    const textoOriginal = textarea.value;
+function verificarYActualizarTexto() {
+    const textoOriginal = document.querySelector('.principal__text__prompt').value
     const textoModificado = eliminarMayusculasYAcentos(textoOriginal);
 
     if (textoOriginal !== textoModificado) {
         alert("No se admiten mayúsculas ni acentos.!");
-        textarea.value = textoModificado;
+        document.querySelector('.principal__text__prompt').value = textoModificado;
     }
 }
-document.querySelectorAll('.principal__text__prompt').forEach(textarea => {
-    textarea.addEventListener('input', function() {
-        verificarYActualizarTexto(this);
-    });
-});
 
 function clean(){
 	initialState();
-	document.querySelector('.principal__text__prompt').value = "";
-	document.querySelector('.principal__text__message__image').style.display = "block";
+    if(document.documentElement.scrollWidth > 991){
+        document.querySelector('.principal__text__message__image').style.display = "block";
+    }
 	document.querySelector('.principal__text__message__paragraph').style.display = "block";
 	document.querySelector(".principal__text__message__title").innerHTML = "Ningún mensaje fue encontrado";
+    return;
 }

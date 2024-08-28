@@ -162,10 +162,6 @@ button{
 	cursor: pointer;
 }
 
-
-
-
-
 .footer{
 	font-family: var(--principal--font);
 	font-weight: 400;
@@ -187,6 +183,7 @@ a{
 /*Tablet*/
 @media (min-width: 744px) and (max-width: 991px) {
 	.principal__text{
+		padding-top:15px ;
 		flex-direction: column;
 		align-items: center;
 	}
@@ -201,11 +198,23 @@ a{
   	display: flex;
   	justify-content: center;
   }
+  .principal__buttons{
+		flex-direction: column;
+		align-items: center;
+		padding-bottom:15px ;
+	}
+	.principal__buttons__button2{
+		width: 70%;
+	}
+	.principal__buttons__button1{
+		width: 70%;
+	}
 }
 
 /*Telefono */
 @media (max-width: 743px) {
 	.principal__text{
+		padding-top:15px ;
 		flex-direction: column;
 		align-items: center;
 	}
@@ -220,4 +229,15 @@ a{
   	display: flex;
   	justify-content: center;
   }
+  .principal__buttons{
+		flex-direction: column;
+		align-items: center;
+		padding-bottom:15px ;
+	}
+	.principal__buttons__button2{
+		width: 70%;
+	}
+	.principal__buttons__button1{
+		width: 70%;
+	}
 }
