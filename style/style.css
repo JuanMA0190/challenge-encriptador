@@ -187,6 +187,12 @@ a{
 		flex-direction: column;
 		align-items: center;
 	}
+
+  .principal__text__message{
+  	width: auto;
+  	padding-top: 50%;
+  }
+
   .principal__text__message__image {
     display: none;
   }
@@ -218,6 +224,11 @@ a{
 		flex-direction: column;
 		align-items: center;
 	}
+
+	.principal__text__message{
+    padding-top: 70%;
+  }
+
   .principal__text__message__image {
     display: none; 
   }
