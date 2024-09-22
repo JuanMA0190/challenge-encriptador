@@ -11,7 +11,7 @@
 	<li>HTML</li>
 	<li>CSS</li>
 	<li>JavaScript</li>
-</ul
+</ul>
 
 <h3>Hecho por:</h3>
 <h3>Juan Manuel Acosta</h3>
